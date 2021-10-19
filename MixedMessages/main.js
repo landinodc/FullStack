@@ -26,7 +26,7 @@ function randNum3() {
 // generates and returns message
 function returnMessage () {
     // adding some logic to add 's'
-    let pronoun = words.pronoun[randNum3];
+    let pronoun = words.pronoun[randNum3()];
     if (pronoun === 'They') {
         return `${pronoun} ${words.adverb[randNum3()]} ${words.activeverb[randNum3()]} ${words.conjunction[randNum3()]} ${words.otherverb[randNum3()]} the ${words.adjectives[randNum3()]} ${words.nouns[randNum3()]}.`;
     } else {
