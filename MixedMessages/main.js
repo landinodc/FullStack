@@ -28,10 +28,12 @@ function returnMessage () {
     // adding some logic to add 's'
     let pronoun = words.pronoun[randNum3];
     if (pronoun === 'They') {
-        return `${words.pronoun[randNum3()]} ${words.adverb[randNum3()]} ${words.activeverb[randNum3()]} ${words.conjunction[randNum3()]} ${words.otherverb[randNum3()]} the ${words.adjectives[randNum3()]} ${words.nouns[randNum3()]}.`;
+        return `${pronoun} ${words.adverb[randNum3()]} ${words.activeverb[randNum3()]} ${words.conjunction[randNum3()]} ${words.otherverb[randNum3()]} the ${words.adjectives[randNum3()]} ${words.nouns[randNum3()]}.`;
     } else {
-        return `${words.pronoun[randNum3()]} ${words.adverb[randNum3()]} ${words.activeverb[randNum3()]}s ${words.conjunction[randNum3()]} ${words.otherverb[randNum3()]} the ${words.adjectives[randNum3()]} ${words.nouns[randNum3()]}.`;
+        return `${pronoun} ${words.adverb[randNum3()]} ${words.activeverb[randNum3()]}s ${words.conjunction[randNum3()]} ${words.otherverb[randNum3()]} the ${words.adjectives[randNum3()]} ${words.nouns[randNum3()]}.`;
     }
 }
 
-returnMessage()
+console.log(returnMessage())
+console.log(returnMessage())
+console.log(returnMessage())
